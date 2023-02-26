@@ -1,4 +1,4 @@
-mport json
+import json
 import os
 import ssl
 from ibm_watson import LanguageTranslatorV3
