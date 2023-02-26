@@ -5,11 +5,11 @@ from translator import englishToFrench, frenchToEnglish
 class TestEnglishToFrench(unittest.TestCase):
     def test1(self):
         self.assertEqual(englishToFrench("Hello"),"Bonjour")
-        self.assertIsNotNone(englishToFrench("Hello"))
+        self.assertNotEqual(englishToFrench("Hello"))
 
 class TestFrenchToEnglish(unittest.TestCase):
     def test1(self):
         self.assertEqual(frenchToEnglish("Bonjour"),"Hello")
-        self.assertIsNotNone(frenchToEnglish("Bonjour"))
+        self.assertNotEqual(frenchToEnglish("Bonjour"))
 
 unittest.main()
